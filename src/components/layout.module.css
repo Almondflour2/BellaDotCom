@@ -4,20 +4,41 @@
     font-family: sans-serif;
 }
 .title {
-    color: blue;
-    font-size: 3rem;
-  }
-  .heading {
-    color: rebeccapurple;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
+  color: blue;
+  font-size: 3rem;
+}
+.heading {
+  color: rebeccapurple;
+}
+.nav-links {
+  display: flex;
+  padding-left: 0;
+  list-style-type: "+";
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}
+.hidden-text {
+  color:yellowgreen;
+  font-style: bold;
+}
+.hidden-text:hover + .hideli {
+  opacity: 100;
+}
+.hideli {
+  opacity: 0;
+}
+ul {
+  list-style-type: "+";
+  padding-right: 1rem;
+}
+li {
+  padding-left: .5rem;
+}
+
+
+
+
