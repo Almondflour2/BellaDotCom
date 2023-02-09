@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 //block scoped constant to define the look of the page
 const pageStyles = {
@@ -18,6 +19,6 @@ const CoffeePage = () => {
   )
 }
 
-export const Head = () => <title>Coffee</title>
+export const Head = () => <Seo title="COFFE" />
 //export declaration allows other programs to use it with the import 
 export default CoffeePage

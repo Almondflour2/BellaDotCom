@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { linkStyle } from '../components/layout'
+import Seo from '../components/seo'
 
 const docLink = {
   text: "gatsby docs",
@@ -29,7 +29,6 @@ const IndexPage = () => {
       <br></br>
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <a
-        style={linkStyle}
         href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
       >
         {docLink.text}
@@ -40,4 +39,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>b.com</title>
+export const Head = () => <Seo title="HOME" />

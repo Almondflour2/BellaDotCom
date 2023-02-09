@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 //my portfolio site project plans!
 
@@ -19,5 +20,7 @@ const BlueprintPage = () => {
         </Layout>
     )
 }
+
+export const Head = () => <Seo title="PLANS" />
 
 export default BlueprintPage

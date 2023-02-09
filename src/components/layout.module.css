@@ -21,14 +21,15 @@
 .nav-link-text {
   color: black;
 }
-.hidden-text {
-  color:yellowgreen;
+.unhide-btn {
+  background-color: lightcyan;
+  color: darkslateblue;
   font-style: bold;
 }
-.hidden-text:hover + .hideli {
+.unhide-btn:hover + .hidden-li {
   opacity: 100;
 }
-.hideli {
+.hidden-li {
   opacity: 0;
 }
 ul {
@@ -37,6 +38,12 @@ ul {
 }
 li {
   padding-left: .5rem;
+}
+.site-title {
+  font-size: 4rem;
+  color: lightcyan;
+  background-color: darkslateblue;
+  padding: .5rem;
 }
 
 

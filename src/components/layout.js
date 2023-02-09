@@ -1,25 +1,42 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { 
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText,
-  hiddenText,
-  hideli
+  unhideBtn,
+  hiddenLi,
+  siteTitle
 } from './layout.module.css'
 //use the Layout to automatically apply styles to the wherever you call it
 
+
 // basically the header and page styling
 const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <div className={container}>
+      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
-        <p><Link to="/">Home</Link>&nbsp;//&nbsp;<Link to="/coffee">Best Energy Source for Coders</Link>&nbsp;//&nbsp;<Link to="/blueprint">Blueprints</Link></p>
+        <p><Link to="/">Home</Link>&nbsp;//&nbsp;
+           <Link to="/coffee">Best Energy Source for Coders</Link>&nbsp;//&nbsp;
+           <Link to="/blueprint">Blueprints</Link>&nbsp;//&nbsp;
+           <Link to="/blog" className={navLinkText}>Blog</Link>
+        </p>
         {/* hidden text feature... hopefully i can make this a reusable asset */}
-        <p className={hiddenText}>developing with gatsby is easier than making...</p>
-        <p className={hideli}>cheese!</p>
+        <p className={unhideBtn}>developing with gatsby is easier than making...</p>
+        <p className={hiddenLi}>flan!</p>
       </nav>
       <main>
         <h1>{pageTitle}</h1>
@@ -27,15 +44,6 @@ const Layout = ({ pageTitle, children }) => {
       </main>
     </div>
   )
-}
-
-
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
 }
 
 export default Layout
