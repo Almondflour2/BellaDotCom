@@ -14,11 +14,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.4.2",
     "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-mdx": "^5.6.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-remark-mermaid": "^3.0.1",
     "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-transformer-remark": "^6.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

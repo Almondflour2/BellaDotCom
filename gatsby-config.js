@@ -16,5 +16,28 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     }, //gatsby-source-filesystem requires configuring to get the path of the blog directory, and adds them to the data layer. 
-  ],
+    "gatsby-plugin-mdx",
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-mermaid`,
+            options: {
+              launchOptions: {
+                executablePath: 'path/to/chrome/executable'
+              },
+              svgo: {
+                plugins: [{ name: 'removeTitle', active: false }]
+              },
+              mermaidOptions: {
+                theme: 'neutral',
+                themeCSS: '.node rect { fill: #fff; }'
+              }
+            }
+          }
+        ]
+      }
+    }
+  ], 
 }
