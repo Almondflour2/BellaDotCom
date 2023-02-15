@@ -7,16 +7,6 @@ module.exports = {
     title: `B.COM`,
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
-    }, //gatsby-source-filesystem requires configuring to get the path of the blog directory, and adds them to the data layer. 
-    "gatsby-plugin-mdx",
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -38,6 +28,16 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    }, //gatsby-source-filesystem requires configuring to get the path of the blog directory, and adds them to the data layer. 
+    "gatsby-plugin-mdx",
   ], 
 }
