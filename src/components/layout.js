@@ -39,7 +39,7 @@ const Layout = ({ pageTitle, children }) => {
         <p className={hiddenLi}>flan!</p>
       </nav>
       <main>
-        <h1>{pageTitle}</h1>
+        <h3>{pageTitle}</h3>
         {children}
       </main>
     </div>

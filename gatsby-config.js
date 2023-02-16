@@ -7,28 +7,6 @@ module.exports = {
     title: `B.COM`,
   },
   plugins: [
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-mermaid`,
-            options: {
-              launchOptions: {
-                executablePath: 'path/to/chrome/executable'
-              },
-              svgo: {
-                plugins: [{ name: 'removeTitle', active: false }]
-              },
-              mermaidOptions: {
-                theme: 'neutral',
-                themeCSS: '.node rect { fill: #fff; }'
-              }
-            }
-          }
-        ]
-      }
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
@@ -37,7 +15,8 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog`,
       }
-    }, //gatsby-source-filesystem requires configuring to get the path of the blog directory, and adds them to the data layer. 
+    },
     "gatsby-plugin-mdx",
-  ], 
-}
+    "gatsby-transformer-sharp",
+  ],
+};
