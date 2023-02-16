@@ -4,51 +4,19 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Isabella Lawson's Gatsby Tutorial Site
 </h1>
+<a href="https://www.belladotcom.gatsbyjs.io">
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+I discovered Gatsby one day by looking at the wonderful portfolio website made by <a href="https://brittanychiang.com/">Brittany Chiang</a>. Her website is clean, elegant, easy to read, and generously links to her Github repo! I saw 'Gatsby' and was immediately intrigued because as a developer with a new focus on the web, I want to know about as many new web technologies as possible. 
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+So far, Gatsby is proving to be a great way to learn React. Gatsby is well documented and extremely user friendly. The company's culture shines through in their tutorials. I'm really happy that I found it! (I even ordered a T-Shirt from them to wear as a pump cover.) With it, I'm going to create a user-friendly site that shows off my experience and coding methods.  Headless architecture like this one shifts the user interface entirely into the browser, making the site faster and creating a better front-end development experience. You might think that Gatsby would be focusing all their energy on making the web better for their <a href="https://www.gatsbyjs.com/showcase/">clients such as Figma and Little Caesar's,</a> but they spend effort and time to make an elegant and efficient development experience for someone making a personal website.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<p align="center">
+<a href="https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture"><img src="https://user-images.githubusercontent.com/89947603/219471720-eb38ea9e-a52d-40b2-a52b-a0ec457d3478.png" alt="how headless internet works" title="a chart showing how headless internet works"></a>
+</p>
 
-2.  **Start developing.**
+This was a testing ground. I learned how Gatsby uses GraphQL and how to use its GraphiQL tool to create programmatically written content & how to dynamically render styles with JSX. Expect a cleaner, commented site soon with a project plan for my very own portfolio site. 
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+See you soon!
